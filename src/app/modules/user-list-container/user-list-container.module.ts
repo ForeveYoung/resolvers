@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { UserListComponent } from './components/user-list/user-list.component';
-import { UserResolver } from './resolvers/user.resolver';
 import { UserListContainerRoutingModule } from './user-list-container-routing.module';
 import { UserListContainerComponent } from './user-list-container.component';
 import { MatCardModule } from '@angular/material/card';
@@ -18,6 +17,5 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatButtonModule,
     MatProgressBarModule,
   ],
-  providers: [UserResolver],
 })
 export class UserListContainerModule {}
