@@ -1,0 +1,6 @@
+<div class="wrapper">
+  <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+  <div *ngFor="let user of users" class="btn">
+    <button mat-stroked-button (click)="showUser(user)">{{ user.name }}</button>
+  </div>
+</div>
